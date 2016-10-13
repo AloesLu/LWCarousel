@@ -13,6 +13,7 @@
 		6976B3821DAE20D500ADD731 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6976B3801DAE20D500ADD731 /* Main.storyboard */; };
 		6976B3841DAE20D500ADD731 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6976B3831DAE20D500ADD731 /* Assets.xcassets */; };
 		6976B3871DAE20D500ADD731 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6976B3851DAE20D500ADD731 /* LaunchScreen.storyboard */; };
+		6976B3901DAE212900ADD731 /* LWCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6976B38F1DAE212900ADD731 /* LWCarousel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		6976B3831DAE20D500ADD731 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6976B3861DAE20D500ADD731 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6976B3881DAE20D500ADD731 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6976B38E1DAE212900ADD731 /* LWCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWCarousel.h; sourceTree = "<group>"; };
+		6976B38F1DAE212900ADD731 /* LWCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWCarousel.m; sourceTree = "<group>"; };
+		6976B3911DAF2B2500ADD731 /* LWCarousel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LWCarousel-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 		6976B3761DAE20D500ADD731 /* LWCarousel */ = {
 			isa = PBXGroup;
 			children = (
+				6976B38E1DAE212900ADD731 /* LWCarousel.h */,
+				6976B38F1DAE212900ADD731 /* LWCarousel.m */,
 				6976B37A1DAE20D500ADD731 /* AppDelegate.h */,
 				6976B37B1DAE20D500ADD731 /* AppDelegate.m */,
 				6976B37D1DAE20D500ADD731 /* ViewController.h */,
@@ -75,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				6976B3781DAE20D500ADD731 /* main.m */,
+				6976B3911DAF2B2500ADD731 /* LWCarousel-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -150,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6976B3901DAE212900ADD731 /* LWCarousel.m in Sources */,
 				6976B37F1DAE20D500ADD731 /* ViewController.m in Sources */,
 				6976B37C1DAE20D500ADD731 /* AppDelegate.m in Sources */,
 				6976B3791DAE20D500ADD731 /* main.m in Sources */,
@@ -270,7 +278,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LWCarousel/LWCarousel-Prefix.pch";
 				INFOPLIST_FILE = LWCarousel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aloes.LWCarousel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -281,7 +292,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LWCarousel/LWCarousel-Prefix.pch";
 				INFOPLIST_FILE = LWCarousel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aloes.LWCarousel;
 				PRODUCT_NAME = "$(TARGET_NAME)";

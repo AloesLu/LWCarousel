@@ -1,0 +1,21 @@
+//
+//  LWCarousel-Prefix.pch
+//  LWCarousel
+//
+//  Created by AloesLu on 2016/10/13.
+//  Copyright © 2016年 AloesLu. All rights reserved.
+//
+
+#ifndef LWCarousel_Prefix_pch
+#define LWCarousel_Prefix_pch
+
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+#define kScreen_Width [UIScreen mainScreen].bounds.size.width
+
+#define SDKVersion10 (([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0)?YES:NO)
+
+#define kMainColor [UIColor colorWithRed:254.0/255.0 green:219.0/255.0 blue:67.0/255.0 alpha:1.0]
+#define kSeparatorColor [UIColor colorWithRed:222.0/255.0 green:222.0/255.0 blue:222.0/255.0 alpha:1.0]
+#define kBGColor [UIColor colorWithRed:122.0/255.0 green:122.0/255.0 blue:122.0/255.0 alpha:1.0]
+
+#endif /* LWCarousel_Prefix_pch */
